@@ -19,6 +19,13 @@ The way to display the various body parts is to create a separate view for each 
 
 (thanks to Victoria Kirst for the original assignment idea and images!)
 
-
 ## Getting started 
 
+Because of the short time limit, you'll start out with a partly set up Xcode project. Go to [insert git repo link] and fork this repository. Next, clone this repository onto your computer. 
+
+Go the the newly cloned repository on your computer and have a look around. You'll notice that there is a `Mr. Potatohead` folder, a file called `Mr. Potatohead.xcodeproj`, and a README.md. The `Mr. Potatohead.xcodeproj` file is the file that contains your project. Go ahead and open this file. If everything goes to plan this should open the Mr. Potatohead project in Xcode.  
+
+UITLEG OVER HOE XCODE ER UIT ZIET. 
+The `AppDelegate.swift` file contains the []. The `PotatoViewController.swift` is the file that will hold the code that makes the app behave like you want it to. This is the file where you'll be writing code. 
+
+The `PotatoViewController.swift` file is a file corresponding to a `ViewController`: a file that controls what a user will see (view) on their phone screen. You can create the layout of the app in the storyboard. 

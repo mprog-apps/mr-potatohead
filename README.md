@@ -10,8 +10,8 @@
 
 ## Background
 
-![Screenshot of Mr. Potato Head](pictures/home.png)
-![Screenshot of Mr. Potato Head](pictures/home_dressed.png)
+<img src="pictures/home.png" width="30%"><img src="pictures/home_dressed.png" width="30%">
+
 
 Imagine an app that displays a "Mr. Potato Head" toy on the screen. The toy has several accessories and body parts that can be placed on it, such as eyes, nose, mouth, ears, hat, shoes, and so on.
 

@@ -70,7 +70,7 @@ All the checkboxes are now connected to a `checkClicked` method, which we will u
 1.  Now if you haven't switched yet, switch to the code, by double-clicking `MainActivity` in the Java folder in the project browser.
 
 2. In one of the methods, create a Log message like this:
-<img src="figures/logging.PNG">
+<img src="pictures/logging.PNG">
 
 3.  Now try your app! Run it on your phone or in the simulator. Your app should log something whenever you click one of the checkboxes. If not, ask for help!
 

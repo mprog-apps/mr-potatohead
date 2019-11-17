@@ -3,14 +3,12 @@
 
 ## Objectives
 
-- Create a first app!
-- Practice with Git.
-- Use layouts to design your user interface.
-
+- Design your user interface - 5 points
+- Write the ```onClick``` methods for your radiobuttons or checkboxes - 5 points
+- Make sure the application remembers the way Mr. Potatohead is dressed when the orientation of your phone changes! - 5 points
 
 ## Background
-
-![Screenshot of Mr. Potato Head](potato.png)
+<img src="pictures/home.png" width="30%"><img src="pictures/home_dressed.png" width="30%">
 
 Imagine an app that displays a "Mr. Potato Head" toy on the screen. The toy has several accessories and body parts that can be placed on it, such as eyes, nose, mouth, ears, hat, shoes, and so on.
 
@@ -22,89 +20,41 @@ The way to display the various body parts is to create a separate view for each 
 
 
 ## Getting started
+We have created a project already for you in Android Studio, so you can get started immediately. The project is created for API 15 (IceCreamSandwich). If your phone has an older operating system, please ask for help.
 
-<iframe src="https://player.vimeo.com/video/211268587" width="320" height="200" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
-1.  Create a new Android studio project, using these settings:
-    - Choose API 24 (Nougat) unless your own phone has an older operating system
-    - Start with an Empty Activity which is called `MainActivity`
-    - Leave all other settings unchanged
-
-2.  Go to <https://github.com/new> and create a new, empty repository. Do not allow it to add a `README`. You may leave all other settings unchanged.
-
-3.  Add a git repository to the project on your computer. Go to Android Studio, and in the menu choose **VCS -> Enable Version Control Integration**. Choose **git** as the type and confirm. This will not change much, but sets us up for the next steps.
-
-    Note: if you get a popup to ask whether you would like to add some file to the repository, answer "No" for now. If you answer "Yes", things may get complicated later on.
-
-4.  Link the local repository to your Github project. Choose **VCS -> Git -> Remotes...**. Add a remote with name "origin". You can find the URL on the Github project you just created:
-
-    ![find the git url on the github website for the project you just created](git-url.png)
-
-5.  Android Studio has generated quite a few files for your project already. To add these, let's **commit** and **push** those files to Github. Press **Cmd-K** or **Ctrl-K** to show the Commit Changes screen. There, you should see a long list of "unversioned files", which should be selected. Enter a commit message `Initial project`, turn off code analysis, and then press the **commit** button.
-
-    **Note:** some files may be selected while there are still a lot of "unversioned files". Make
-    sure to select *all* of the files before continuing.
-
-    ![](commit.png)
-
-6.  Press **Cmd-Shift-K** or **Ctrl-Shift-K** to show the Push Commits dialog. Press the **Push** button to send everything to Github.
-
-Your project files should now be visible on Github like in the picture below. All of the files and folders should be there! If not, ask for help!
-
-![](git-files.png)
-
-
-## Add images to the project
+Download the distribution code that can be found in this directory. Open the project in Android Studio. 
 
 For this project, we'll only work with the two most important files in your Android project: `MainActivity.java`, which contains the back-end code for your main screen; and `activity_main.xml`, which contains the definition of what the main screen looks like. You'll find them in the **project browser**:
 
-![](file-browser.png)
+<img src="pictures/project_browser.png">
 
-No need to create original art! Here's [image files](mr-potato-head-images.zip) for each body part and accessory, such as `body.png`, `ears.png`, `hat.png`. Let's add those to the project.
-
-1. Just for a second, switch to the Project View using this dropdown you can find on the left hand side of your IDE:
-
-    ![](project-view.png)
-
-2. Navigate to app -> src -> main -> res -> drawable. Now, drag the downloaded image files into that `drawable` folder. Android Studio will offer to move/copy them, and then to add them to your local git repository. That's all fine.
-
-3. Jump back to the Android View using the same dropdown as in step 1. You can now use the images from your app.
 
 ## Creating the user interface
 
-Let's design the interface:
-
-![](layout.png)
+Let's design the interface. 
 
 1.  Double-click `activity_main.xml` in the project browser to open it. 
 
-2.  Your layout currently contains a `Label` with the text `Hello World!`. Click it and press delete (backspace) to remove it from the layout.
+2.  Your layout currently contains a `Label` with the text `Hello World! I am creating my first app!`. Under this, in a horizontal linear layout, it contains a `FrameLayout`. This type of layout is perfect for stacking our potato images on top of each other.
 
-3.  Now go to the Palette (remember where? it was in the video!). Select the "Layouts" category and drag a `FrameLayout` to the editor. This layout is perfect for stacking our potato images on top of each other.
+We'll use the Palette to design the layout, as can be seen in the following screenshot:
+<img src="pictures/designing_layout.png">
 
-4.  Also add a `GridLayout` to the screen. That one nicely fits the idea of presenting a grid of checkboxes.
+3.  Select the "Layouts" category and drag a `GridLayout` to the screen. That one nicely fits the idea of presenting a grid of checkboxes.
 
-    > Note that the activity already contained a `ConstraintLayout`. Now you've added to different types of layout *into* that top-level layout.
+    > Note that the activity already contained a `LinearLayout`. Now you've added to different types of layout *into* that top-level layout.
 
-5.  Roughly position both layouts like they are in the picture above. Later, we'll add constraints for automatically positioning them on different screen sizes.
+4.  Roughly position both layouts like they are in the picture above. Later, we'll add constraints for automatically positioning them on different screen sizes.
 
-6.  Drag an `ImageView` from the palette to the `FrameLayout`. Immediately, a dialog pops up, allowing you to choose one of the `.png` files that you just added to the project. Start with the body!
+5.  Drag an `ImageView` from the palette to the `FrameLayout`. Immediately, a dialog pops up, allowing you to choose one of the `.png` files that you just added to the project. We have already added the body for you.
 
-7.  Make sure all the images are the same size and positioned right on top of each other. Currently, you can see all of them, but we'll make sure they are invisible when the app starts. Find the Attributes sidebar like in the screen shot below:
+6.  Make sure all the images are the same size and positioned right on top of each other. Currently, you can see all of them, but we'll make sure they are invisible when the app starts. Find the Attributes sidebar like in the screen shot below:
 
-    ![](attributes.png)
-
-    For each of the images, set the `visibility` attribute to `invisible`. It is probably listed under "favorite attributes", but if you can't find it, choose the blue link "View all attributes" all the way down the Attributes sidebar.
+For each of the images, set the `visibility` attribute to `invisible`. It is probably listed under "favorite attributes", but if you can't find it, choose the blue link "View all attributes" all the way down the Attributes sidebar.
     
-    > Tip: because all images are supposed to be on top of each other, it's hard to select individual items. In that case, you can use the component tree to select the image views. You can even select multiple views and set the attributes for all of them:
-    
-    ![](component.png)
+    > Tip: because all images are supposed to be on top of each other, it's hard to select individual items. In that case, you can use the component tree to select the image views. You can even select multiple views and set the attributes for all of them.
 
-8.  Now it's time to add checkboxes. Drag them from the Palette and set their `text` to reflect the body parts that are present in the images.
-
-9.  Finally, we'll need to add constraints. In the component tree, select the `gridLayout` and the `frameLayout`. Right-click and select Chain > Create Vertical Chain. This chain is the basis for an automatic layout.
-
-10. Using your experience from the Android Lab about constraint layouts, make the screen even better, and try different phone sizes to check that the layout fits nicely for each of them!
+7.  Now it's time to add checkboxes. Drag them from the Palette and set their `text` to reflect the body parts that are present in the images.
 
 
 ## Connecting everything with code

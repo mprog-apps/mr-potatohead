@@ -22,7 +22,7 @@ The way to display the various body parts is to create a separate view for each 
 ## Getting started
 We have created a project already for you in Android Studio, so you can get started immediately. The project is created for API 15 (IceCreamSandwich). If your phone has an older operating system, please ask for help.
 
-Download the distribution code that can be found in this directory. Open the project in Android Studio. 
+Download the distribution code that can be found in this directory. Start Android Studio, click on "open an existing project", and open the project.
 
 For this project, we'll only work with the two most important files in your Android project: `MainActivity.java`, which contains the back-end code for your main screen; and `activity_main.xml`, which contains the definition of what the main screen looks like. You'll find them in the **project browser**:
 
@@ -70,7 +70,7 @@ All the checkboxes are now connected to a `checkClicked` method, which we will u
 1.  Now if you haven't switched yet, switch to the code, by double-clicking `MainActivity` in the Java folder in the project browser.
 
 2. In one of the methods, create a Log message like this:
-<img src="figures/logging.PNG">
+<img src="pictures/logging.PNG">
 
 3.  Now try your app! Run it on your phone or in the simulator. Your app should log something whenever you click one of the checkboxes. If not, ask for help!
 

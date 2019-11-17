@@ -1,11 +1,11 @@
-# Mr. Potatohead
+# Hackathon - Mr. Potatohead
 
 
 ## Objectives
 
 - Create a first app!
-- Practice with Git.
 - Use layouts to design your user interface.
+- You can gain 15 points for your team.
 
 
 ## Background

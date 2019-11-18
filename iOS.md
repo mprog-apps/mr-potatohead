@@ -28,4 +28,16 @@ Go the the newly cloned repository on your computer and have a look around. You'
 UITLEG OVER HOE XCODE ER UIT ZIET. 
 The `AppDelegate.swift` file contains the []. The `PotatoViewController.swift` is the file that will hold the code that makes the app behave like you want it to. This is the file where you'll be writing code. 
 
-The `PotatoViewController.swift` file is a file corresponding to a `ViewController`: a file that controls what a user will see (view) on their phone screen. You can create the layout of the app in the storyboard. 
+The `PotatoViewController.swift` file is a file corresponding to a `ViewController`: a file that controls what a user will see (view) on their phone screen. You can create the layout of the app in the `Main.storyboard`. Click on `Main.storyboard` now. You'll see that there is already an image of a potato and a single switch button in the view. It's your job to finish the rest of the app.  
+
+Now, let's get started! 
+
+## Layout 
+
+First, we want to get our user interface looking like it should. We've already placed the body and a single switch for you and connected it to the code, but the rest of the images and switches and labels you're going to have to add yourself. You can add an image by adding an ImageView. You can do this by:
+
+1. Click on the `+` at the top right corner in the `Main.storyboard`. 
+![xcode screenshot showing where to add elements](pictures/ios_adding_elements.png)
+2. Use the search bar to search for an ImageView. ![xcode screenshot showing how to search for elements](pictures/ios_searching_elements.png)
+3. Drag the ImageView to the phone screen.
+4. Click on the ImageView you just added and on the right hand side of the screen, go to the `Attributes Inspector` and set the image of the ImageView to the image you want to display. ![xcode screenshot showing how to search for elements](pictures/ios_naming_image.png)

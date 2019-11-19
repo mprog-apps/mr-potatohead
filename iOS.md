@@ -21,7 +21,7 @@ The way to display the various body parts is to create a separate view for each 
 
 ## Getting started 
 
-Because of the short time limit, you'll start out with a partly set up Xcode project. Go to [insert git repo link] and fork this repository. Next, clone this repository onto your computer. 
+Because of the short time limit, you'll start out with a partly set up Xcode project. Go to [this git repository](https://github.com/mprog-apps/mr-potatohead-ios) and fork it. Next, clone this repository onto your computer. 
 
 Go the the newly cloned repository on your computer and have a look around. You'll notice that there is a `Mr. Potatohead` folder, a file called `Mr. Potatohead.xcodeproj`, and a README.md. The `Mr. Potatohead.xcodeproj` file is the file that contains your project. Go ahead and open this file. If everything goes to plan this should open the Mr. Potatohead project in Xcode.  
 

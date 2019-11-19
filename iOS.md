@@ -46,7 +46,7 @@ In order to be able to control the images and switches with code, we need to con
 1. Click on "add editor to right" on the top right side of the screen. 
 2. Click on the ![click](pictures/ios_click.png) symbol at the top left of the screen that just popped up. 
 3. Go to "Automatic" and select the `PotatoViewController`. You should now see the code that is in the ViewController
-4. Next, click on the on the image/label/switch. Press control and drag towards the code. ![do this](pictures/ios_drag.png)
+4. Next, click on the image/label/switch. Press control and drag towards the code. ![do this](pictures/ios_drag.png)
 5. Now you'll want to make sure the connection is set to Outlet, the object is set to the PotatoViewController. You can leave the other options be for now. ![outlet](pictures/ios_outlet.png)
 
 

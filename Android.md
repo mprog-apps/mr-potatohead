@@ -22,7 +22,7 @@ The way to display the various body parts is to create a separate view for each 
 ## Getting started
 We have created a project already for you in Android Studio, so you can get started immediately. The project is created for API 15 (IceCreamSandwich). If your phone has an older operating system, please ask for help.
 
-Create a GitHub repository with [this](https://github.com/mprog-apps/mr-potatohead-android/generate) provided application template. Download or clone this repository to your computer the way you are used to. Then start Android Studio, choose the "Open an existing project" option, and navigate to that folder.
+Create a GitHub repository, click [this](https://github.com/mprog-apps/mr-potatohead-android) link, log in and click "Use this template". Download or clone this repository to your computer the way you are used to. Then start Android Studio, choose the "Open an existing project" option, and navigate to that folder.
 
 For this project, we'll only work with the two most important files in your Android project: `MainActivity.java`, which contains the back-end code for your main screen; and `activity_main.xml`, which contains the definition of what the main screen looks like. You'll find them in the **project browser**:
 
